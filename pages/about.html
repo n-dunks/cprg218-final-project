@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link rel="stylesheet" type="text/css" href="../styles/fonts.css">
+    <link rel="stylesheet" type="text/css" href="../styles/responsive.css">
+    <script type="text/javascript" src="../javascript/javascript.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caprasimo&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Macondo&display=swap"
+        rel="stylesheet">
+    <title>About Sunny Spirits</title>
+</head>
+
+<body>
+    <div class="navbar" id="about-navbar">
+        <ul>
+            <li id="logo"><a href="../index.html"><img src="../images/Asset 1.svg"></a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://shop.app/">Shop</a></li>
+            <li><a href="../index.html#recipes">Recipes</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Login"><Button>Login</Button></a></li>
+        </ul>
+    </div>
+    <div class="about-hero-image"
+        title="Three bottles of Loah Beer Co. Beer with Lime each on podiums against a yellow backdrop">
+        <div class="hero-text">
+            <h1>Hi, Sunny!</h1>
+        </div>
+    </div>
+    <div>
+        <h2 class="section-title">About</h2>
+    </div>
+    <div class="about-content">
+        <div class="about1">
+            <h2>Our Story</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae congue eros. Aliquam dapibus
+                ultricies velit ut blandit. Cras convallis diam finibus diam accumsan, vel malesuada turpis congue.
+                Nullam
+                facilisis nunc a lacus tristique malesuada. Maecenas et orci sagittis, lacinia ex nec, commodo leo.
+                Vivamus
+                id nunc eu risus aliquet placerat a a elit. Proin in leo orci. Interdum et malesuada fames ac ante ipsum
+                primis in faucibus. Curabitur auctor nulla quis tellus elementum, a molestie orci dignissim. Proin
+                facilisis
+                sed nibh et pellentesque. Etiam et ante ut felis varius molestie eu ut risus. Maecenas at leo vel felis
+                pretium finibus vel sed dolor. Cras varius leo et velit scelerisque, vel porta arcu tincidunt. Etiam a
+                lorem
+                magna. Aliquam id suscipit lectus. Nunc rutrum, elit ut ornare efficitur, lorem mauris finibus neque,
+                vel
+                accumsan nisl nulla sit amet elit.</p>
+            <h2>Our Values</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae congue eros. Aliquam dapibus
+                ultricies velit ut blandit.</p>
+        </div>
+        <img class="about2" src="../images/team-photo.webp"
+            alt="Four wine glasses containing straws, grapes, mint leaves and a sparkling beverage being clinked together in a toast outdoors">
+        <div class="about3">
+            <h2 id="faq">FAQ</h2>
+            <button class="accordion">Shipping</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                </p>
+            </div>
+
+            <button class="accordion">Returns</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat.</p>
+            </div>
+
+            <button class="accordion">Contact</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+    <!-- ACCORDION JAVASCRIPT -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <footer>
+        <div>
+            <a href="../index.html"><img src="../images/Asset 2.svg"></a>
+        </div>
+        <div>
+            <h3>Information</h3>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="about.html#faq">FAQ</a></li>
+                <li><a href="https://www.sait.ca/about-sait/work-at-sait">Careers</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="about.html#faq">FAQ</a></li>
+                <li><a href="https://www.sait.ca/about-sait/work-at-sait">Careers</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
